@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
+
 /**
- * main - this is a function
+ * main - prints function
  *
  * Return: always 0
  */
@@ -18,13 +17,11 @@ int main(void)
 	x = n % 10;
 
 	if (n > 5)
-		printf("Last digit of %d is %d and is greater than 5", n, x);
+		printf("Last digit of %d is %d and is greater than 5\n", n, x);
 	else if (n == 0)
-		printf("Last digit of %d is %d and is 0", n, x);
+		printf("Last digit of %d is %d and is 0\n", n, x);
 	else if (n < 6 && n != 0)
-		printf("Last digit of %d is %d and is less than 6 and not 0", n, x);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, x);
 
-	printf("\n");
 	return (0);
-
 }
