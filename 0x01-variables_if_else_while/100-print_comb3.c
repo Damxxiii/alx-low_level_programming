@@ -3,7 +3,7 @@
 /**
  * main - prints diff combinations of two digits
  *
- *i Return: always 0
+ *Return: always 0
  */
 int main(void)
 {
