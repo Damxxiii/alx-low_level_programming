@@ -1,23 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - prints single digit nos seperated by commas
+ * main - prints function
  *
  * Return: always 0
  */
+
 int main(void)
 {
-	int b;
+	int i;
 
-	for (b = '0'; b <= '9'; b++)
-		putchar(b);
-
-	if (b != '9')
-
-		putchar(',');
-	putchar(' ');
-
-	putchar('\n');
-
+	for (i = 0 ; i < 10 ; i++)
+	{
+		if (i == 9)
+			putchar(i + '0');
+		else
+		{
+			putchar(i + '0');
+			putchar(',');
+			putchar(' ');
+		}
+	}
 	return (0);
 }
