@@ -3,7 +3,7 @@
 
 /**
  * print_diagonal - draws a diagonal line on the terminal.
- * @n: number of times to print \
+ * @n: number of times to print diagonal lines
  *
  * Return: empty
  */
