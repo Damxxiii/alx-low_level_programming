@@ -16,12 +16,8 @@ void print_number(int n)
 		putchar('-');
 	}
 	else
-	{
 		m /= 10;
-	}
 	if (m != 0)
-	{
 		print_number(m);
-	}
-	putchar((m = n % 10) + '0');
+	putchar((unsigned int) n % 10 + '0');
 }
