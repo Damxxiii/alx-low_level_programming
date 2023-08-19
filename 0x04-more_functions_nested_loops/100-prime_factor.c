@@ -10,30 +10,19 @@
 
 int main(void)
 {
-	long int n;
-	long int max;
-	long int i;
+	long a, maxf;
+	long number = 612852475143;
+	double square = sqrt(number);
 
-	n = 612852475143;
-	max = -1;
-	if (n % 2 == 0)
+	for (a = 1; a <= square; a++)
 	{
-		max = 2;
-		n = n / 2;
-	}
-
-	for (i = 3; i <= sqrt(n); i = i + 2)
-	{
-		if (n % i == 0)
+		if (number % a == 0)
 		{
-			max = i;
-			n = n / 2;
+			maxf = number / a;
 		}
 	}
-	if (n > 2)
-		max = n;
 
-	printf("%ld\n", max);
+	printf("%ld\n", maxf);
+
 	return (0);
 }
-
