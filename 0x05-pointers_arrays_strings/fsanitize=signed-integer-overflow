@@ -1,0 +1,11 @@
+#include <main.h>
+#include <stdio.h>
+int i  = INT_MIN;
+unsigned u = 0;
+
+int main() {
+  u--;
+  fprintf(stderr, "After UIO\n");
+  s--;
+  fprintf(stderr, "After SIO\n");
+}
