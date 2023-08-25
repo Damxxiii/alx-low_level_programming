@@ -10,26 +10,26 @@
 
 void print_buffer(char *b, int size)
 {
-	int a, d, c;
+	int t, u, v;
 
-	a = 0;
+	t = 0;
 
 	if (size <= 0)
 	{
 		printf("\n");
 		return;
 	}
-	while (a < size)
+	while (t < size)
 	{
-		d = size - a < 10 ? size - a : 10;
-		printf("%08x: ", a);
-		for (c = 0; c < 10; c++)
+		u = size - t < 10 ? size - t : 10;
+		printf("%08x", t);
+		for (v = 0; v < 10; v++)
 		{
-			if (c < d)
-				printf("%02x", *(b + a + c));
+			if (v < u)
+				printf("%02x", *(b + t + v));
 			else
 				printf("  ");
-			if (c % 2)
+			if (v % 2)
 			{
 				printf(" ");
 			}
