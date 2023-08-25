@@ -34,5 +34,20 @@ void print_buffer(char *b, int size)
 				printf(" ");
 			}
 		}
+		for (v = 0; v < u; v++)
+		{
+			int c = *(b + t + v);
+
+			if (c < 32 || c > 132)
+			{
+				c = '.';
+			}
+			printf("%c", c);
+		}
+		printf("\n");
+		t += 10;
 	}
 }
+
+
+
