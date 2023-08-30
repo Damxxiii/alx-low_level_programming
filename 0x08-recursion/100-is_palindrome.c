@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strlen_recursion - to get the string length
  * @s: string
@@ -33,7 +34,7 @@ int compare_string(char *s, int left, int right)
 /**
  * is_palindrome - if a string is a palindrome
  * @s: string to test
- * Return: 1 on success, otherwise 0
+ * Return: 1 if palindrome, otherwise 0
  */
 
 int is_palindrome(char *s)
