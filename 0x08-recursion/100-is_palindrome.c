@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strlen_recursion - string length
+ * _strlen_recursion - to get the string length
  * @s: string
  * Return: length of string
  */
@@ -14,7 +14,7 @@ int _strlen_recursion(char *s)
 }
 /**
  * compare_string - compare each string character
- * @s: string
+ * @s: string to compare
  * @left: smallest iterator
  * @right: largest iterator
  * Return: int
@@ -22,7 +22,7 @@ int _strlen_recursion(char *s)
 
 int compare_string(char *s, int left, int right)
 {
-	if (*s + left == (*s + right))
+	if (*s + left == *(s + right))
 	{
 		if (left == right || left == right + 1)
 			return (1);
@@ -32,7 +32,7 @@ int compare_string(char *s, int left, int right)
 }
 /**
  * is_palindrome - if a string is a palindrome
- * @s: string
+ * @s: string to test
  * Return: 1 on success, otherwise 0
  */
 
