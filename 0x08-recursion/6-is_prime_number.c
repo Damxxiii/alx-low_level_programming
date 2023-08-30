@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *_prime_a - returns 1 if the input integer is a prime number
- * @n: integer
+ * prime_a - returns 1 if the input integer is a prime number
+ * @n: input
  * @b: divisor
  * Return: 0
  */
 
-int _prime_a(int n, int b)
+int prime_a(int n, int b)
 {
 	if (n <= 1 || (n != b && n % b == 0))
 	{
@@ -16,7 +16,7 @@ int _prime_a(int n, int b)
 	{
 		return (1);
 	}
-	return (_prime_a(n, b + 1));
+	return (prime_a(n, b + 1));
 }
 /**
  * is_prime_number -  prime number
@@ -26,5 +26,5 @@ int _prime_a(int n, int b)
 
 int is_prime_number(int n)
 {
-	return (_prime_a(n, 2));
+	return (prime_a(n, 2));
 }
