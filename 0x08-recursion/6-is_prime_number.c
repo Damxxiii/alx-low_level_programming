@@ -1,15 +1,30 @@
 #include "main.h"
 /**
- * is_prime_number - returns 1 if the input integer is a prime number, otherwise return 0.
+ *_prime_a - returns 1 if the input integer is a prime number
  * @n: integer
- * Return: 1 on success, otherwise 0
+ * @b: divisor
+ * Return: 0
+ */
+
+int _prime_a(int n, int b)
+{
+	if (n <= 1 || (n != b && n % b == 0))
+	{
+		return (0);
+	}
+	else if (n == b)
+	{
+		return (1);
+	}
+	return (_prime_a(n, b + 1));
+}
+/**
+ * is_prime_number -  prime number
+ * @n: input
+ * Return: 0 or 1
  */
 
 int is_prime_number(int n)
 {
-	if (n / n == 1)
-	{
-		return (1);
-	}
-	else if
+	return (_prime_a(n, 2));
 }
