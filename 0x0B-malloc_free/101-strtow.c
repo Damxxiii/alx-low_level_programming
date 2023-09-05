@@ -33,7 +33,7 @@ char **strtow(char *str)
 		if (str[a] != ' ' && (str[a + 1] == ' ' || str[a + 1] == '\0'))
 			height++;
 	aout = malloc(sizeof(char *) * (height + 1));
-	if (aout == NULL || height = 0)
+	if (aout == NULL || height == 0)
 	{
 		free(aout);
 		return (NULL);
@@ -42,7 +42,7 @@ char **strtow(char *str)
 	{
 		for (a = al; str[a] != '\0'; a++)
 		{
-			if (str[a] == " ")
+			if (str[a] == ' ')
 				al++;
 			if (str[a] != ' ' && (str[a + 1] == ' ' || str[a + 1] == '\0'))
 			{
