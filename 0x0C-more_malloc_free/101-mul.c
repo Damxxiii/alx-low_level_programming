@@ -40,9 +40,9 @@ int _strlen(char *s)
 }
 
 /**
- * error - main errors
+ * errors - main errors
  */
-void error(void)
+void errors(void)
 {
 	printf("Error\n");
 	exit(98);
@@ -52,7 +52,7 @@ void error(void)
  * main - multiply two numbers
  * @argc: argument count
  * @argv: argument vector
- * Return: 0
+ * Return: always 0(success)
  */
 int main(int argc, char *argv[])
 {
@@ -61,9 +61,9 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-		error();
-	len1 =  _strlen(s1);
-	len2 =  _strlen(s2);
+		errors();
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
 	result = malloc(sizeof(int) * len);
 	if (!result)
