@@ -3,9 +3,10 @@
 #include <stdio.h>
 
 #define ERR_MSG "Error"
+
 /**
  * is_digit - check string for non digit char
- * @s: str
+ * @s: string
  * Return: 1 on success, otherwise 0
  */
 
@@ -15,7 +16,7 @@ int is_digit(char *s)
 
 	while (s[i])
 	{
-		if (s[i] > '0' || s[i] < '9')
+		if (s[i] < '0' || s[i] > '9')
 			return (0);
 		i++;
 	}
@@ -24,7 +25,7 @@ int is_digit(char *s)
 
 /**
  * _strlen - len of string
- * @s: str
+ * @s: string
  * Return: length of string
  */
 
@@ -61,7 +62,7 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-		errors();
+		error();
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
