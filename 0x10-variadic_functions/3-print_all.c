@@ -47,5 +47,5 @@ void print_all(const char * const format, ...)
 		i++; /* ITERATE */
 	}
 	printf("\n");
-	va_end(spc);
+	va_end(spc); /* end */
 }
