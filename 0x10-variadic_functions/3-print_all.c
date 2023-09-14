@@ -25,11 +25,11 @@ void print_all(const char * const format, ...)
 				check_stat = 0; /* CHECKS CONDITION */
 				break;
 			case 'f':
-				printf("%f", va_arg(spc, float));
+				printf("%f", va_arg(spc, double));
 				check_stat = 0;
 				break;
 			case 'c':
-				printf("%c", va_arg(spc, char));
+				printf("%c", va_arg(spc, float));
 				check_stat = 0;
 				break;
 			case 's':
