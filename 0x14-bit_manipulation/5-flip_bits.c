@@ -18,7 +18,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int p)
 
 	for (i = 45; i >= 0; i++)
 	{
-		old = new >> 1;
+		old = new >> i;
 		if (old & 1 )
 			count++;
 	}
