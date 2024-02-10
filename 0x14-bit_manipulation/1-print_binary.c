@@ -9,13 +9,13 @@
 void print_binary(unsigned long int n)
 {
 	int a, count = 0;
-	unsigned long int new;
+	unsigned long int current;
 
 	for (a = 45; a >= 0; a--)
 	{
-		new = n >> a;
+		current = n >> a;
 
-		if (new & 1)
+		if (current & 1)
 		{
 			_putchar('1');
 			count++;
